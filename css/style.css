@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    background-color: #faf9f6; /* Elegant Warm Studio White */
+    background-color: #faf9f6;
     color: #1a1a1a;
     line-height: 1.6;
 }
@@ -55,7 +55,7 @@ h1, h2, h3, .brand-logo, .footer-logo {
 }
 
 .brand-logo span, .footer-logo span {
-    color: #c09152; /* Luxury Amber Accent */
+    color: #c09152;
 }
 
 .nav-menu {
@@ -337,26 +337,6 @@ h1, h2, h3, .brand-logo, .footer-logo {
     background: #c09152;
 }
 
-.quick-add-btn {
-    position: absolute;
-    bottom: -40px;
-    left: 10%;
-    width: 80%;
-    background: rgba(17, 17, 17, 0.9);
-    color: #ffffff;
-    border: none;
-    padding: 10px;
-    border-radius: 6px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: bottom 0.3s;
-}
-
-.product-item:hover .quick-add-btn {
-    bottom: 14px;
-}
-
 .item-details {
     padding: 20px;
 }
@@ -391,6 +371,7 @@ h1, h2, h3, .brand-logo, .footer-logo {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 14px;
 }
 
 .current-price {
@@ -403,6 +384,49 @@ h1, h2, h3, .brand-logo, .footer-logo {
     font-size: 0.9rem;
     color: #aaa;
     text-decoration: line-through;
+}
+
+.buy-now-btn {
+    width: 100%;
+    background-color: #111111;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.buy-now-btn:hover {
+    background-color: #c09152;
+    transform: translateY(-2px);
+}
+
+/* =======================================================
+   PAGINATION / LOAD MORE
+   ======================================================= */
+.load-more-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.load-more-btn {
+    background: transparent;
+    border: 2px solid #111111;
+    color: #111111;
+    padding: 12px 32px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.load-more-btn:hover {
+    background-color: #111111;
+    color: #ffffff;
 }
 
 /* =======================================================
